@@ -6,37 +6,65 @@
     <meta property="og:description" content="" />
     <meta name="theme-color" content="#FFFFFF">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-        .russo-one-regular {
-            font-family: "Russo One", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
         body {
             margin: 0;
             padding: 0;
+            background-image: url("bg.png");
+            background-size: cover;
         }
-        #logo_flex_container {
+        #header_flex {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            border-bottom: 2px solid;
+            width: 100vw;
+            height: 4em;
+            justify-content:space-around;
+            align-items:center;
+            margin-bottom: 3em;
+            backdrop-filter: blur(5px);
+            background-color: rgba(180, 180, 180, 0.2);
         }
-        #logo_big {
+        #header_flex > * {
+            transition-duration: .3s;
+            font-weight: 600;
+            font-size: 1.5em;
+            font-family: "Roboto Slab", serif;
+            cursor: pointer;
+        }
+        #header_flex > *:hover {
+            transition-duration: .3s;
+            scale: 1.2;
+        }
+        #main_flex {
+            display: flex;
+            width: 100vw;
+            justify-content:space-around;
+            flex-wrap: wrap;
+        }
+        #sidetext {
+            background-color: rgba(0, 13, 28, 0.77);
+            backdrop-filter: blur(5px);
+            width: 50%;
             font-size: 3em;
-        }
-        .logo_text {
-            margin-top: 1%;
-            margin-bottom: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1em;
+            color: white;
         }
     </style>
 </head>
+<body>
+    <div id="header_flex">
+        <a>SLDV.pp.ua</a>
+        <a>Бара на фб</a>
+        <a>О нас</a>
+    </div>
 
-<div id="logo_flex_container">
-    <h1 id="logo_big" class="russo-one-regular logo_text">
-        SLDV.pp.ua
-    </h1>
-    <h3 class="russo-one-regular logo_text">
-        Coming soon 
-    </h3>
-</div>
+    <div id="main_flex">
+        <img src="http://sldv.pp.ua/icon.png">
+        <div id="sidetext">
+            Selidovo is love, Selidovo is life...
+        </div>
+    </div>
+</body>
