@@ -1,71 +1,36 @@
-<head>
-    <title>SLDV</title>
-    <meta property="og:title" content="SLDV" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://sldv.pp.ua" />
-    <meta property="og:image" content="http://sldv.pp.ua/icon.png" />
-    <meta property="og:description" content="Selidovo is love, Selidovo is life..." />
-    <meta name="theme-color" content="#FFFFFF">
-    <style>
-        
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: blue;
+}
+#logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10em;
+}
+#logo>*:nth-child(1) {
+    color: white;
+}
+#logo>*:nth-child(2) {
+    color: lime;
+}
+#logo>*:nth-child(3) {
+    color: red;
+}
+#logo>*:nth-child(4) {
+    color: black;
+}
+</style>
 
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url("bg.png");
-            background-size: cover;
-        }
-        #header_flex {
-            display: flex;
-            border-bottom: 2px solid;
-            width: 100vw;
-            height: 4em;
-            justify-content:space-around;
-            align-items:center;
-            margin-bottom: 3em;
-            backdrop-filter: blur(5px);
-            background-color: rgba(180, 180, 180, 0.2);
-        }
-        #header_flex > * {
-            transition-duration: .3s;
-            font-weight: 600;
-            font-size: 1.5em;
-            font-family: "Roboto Slab", serif;
-            cursor: pointer;
-        }
-        #header_flex > *:hover {
-            transition-duration: .3s;
-            scale: 1.2;
-        }
-        #main_flex {
-            display: flex;
-            width: 100vw;
-            justify-content:space-around;
-            flex-wrap: wrap;
-        }
-        #sidetext {
-            background-color: rgba(0, 13, 28, 0.77);
-            backdrop-filter: blur(5px);
-            width: 50%;
-            font-size: 3em;
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 1em;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-    <div id="header_flex">
-        <a>SLDV.pp.ua</a>
-        <a>Бара на фб</a>
-        <a>О нас</a>
-    </div>
-
-    <div id="main_flex">
-        <img src="http://sldv.pp.ua/icon.png">
-        <div id="sidetext">
-            Selidovo is love, Selidovo is life...
-        </div>
-    </div>
-</body>
+<div id="logo">
+    <span>S</span>
+    <span>L</span>
+    <span>D</span>
+    <span>V</span>
+</div>
